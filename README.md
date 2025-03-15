@@ -18,7 +18,7 @@ This project is licensed under the [MIT License](https://mit-license.org/). See 
 
 ## Acknowledgments
 Special thanks to:
-- [Cakrawala University](https://www.cakrawala.ac.id/).
+- [Cakrawala University](https://www.cakrawala.ac.id/)
 - [Rony Setyawan](https://www.linkedin.com/in/setyawanrony/)
 
 ---
