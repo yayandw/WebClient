@@ -34,7 +34,7 @@ Follow these steps to set up the project locally:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd WebClient
+   cd ./WebClient/Tugas-2
    ```
 3. Install dependencies:
    ```bash
@@ -50,12 +50,12 @@ Follow these steps to set up the project locally:
 ## Usage
 - Run `JavaScript` source.
     ```bash
-    cd ./Tugas-2/javascript/src
+    cd ./javascript/src
     ```
 
 - or `TypeScript`
   ```bash
-  cd ./Tugas-2/dist
+  cd ./dist
   ```
 
 ---
