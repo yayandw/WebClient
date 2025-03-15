@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+//    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true
+  },
+  "include": [
+    "typescript/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
