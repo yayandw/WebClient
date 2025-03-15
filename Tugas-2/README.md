@@ -79,7 +79,7 @@ Output:
 
 Run the script:
 ```bash
-  node centiToKiloMeter 1000
+  node centiToKiloMeter 100000
 ```
 
 Output:
