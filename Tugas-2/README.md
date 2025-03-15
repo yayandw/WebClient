@@ -66,7 +66,7 @@ Follow these steps to set up the project locally:
 
 Run the script:
 ```bash
-  node fahrenheitToCelcius 120
+  node fahrenheit_to_celsius 120
 ```
 
 Output:
@@ -79,7 +79,7 @@ Output:
 
 Run the script:
 ```bash
-  node centiToKiloMeter 100000
+  node centi_to_kilo_meter 100000
 ```
 
 Output:
@@ -92,7 +92,7 @@ Output:
 
 Run the script:
 ```bash
-  node isEven 1000
+  node is_even 1000
 ```
 
 Output:
@@ -105,7 +105,7 @@ Output:
 
 Run the script:
 ```bash
-  node removeString "Hello world" "ell"
+  node remove_string "Hello world" "ell"
 ```
 
 Output:
@@ -118,7 +118,7 @@ Output:
 
 Run the script:
 ```bash
-  node isPalindrome "madam"
+  node is_palindrome "madam"
 ```
 
 Output:
