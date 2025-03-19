@@ -5,7 +5,7 @@ import {removeWord} from "./javascript/src/remove_word.js";
 import {isEven} from "./javascript/src/is_even.js";
 
 const fahrenheit = 100;
-console.log("output: " + fahrenheitToCelsius(fahrenheit).toFixed(2) + "°C");
+console.log("output: " + fahrenheitToCelsius(fahrenheit) + "°C");
 const centimeter = 300000;
 console.log("output: " + centiToKiloMeter(centimeter) + "km");
 const number = 1000;
