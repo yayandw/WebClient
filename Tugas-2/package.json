@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test:js": "node test.js"
   },
   "type": "module",
   "devDependencies": {
