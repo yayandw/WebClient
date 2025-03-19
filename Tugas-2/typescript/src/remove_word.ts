@@ -1,4 +1,14 @@
-function removeWord(words: string, sentence: string): string {
-    return words.replace(sentence, "");
+/**
+ * Remove word in sentence
+ *
+ * @param {string} sentence - The sentence.
+ * @param {string} word - The word want to remove.
+ * @returns {string} Result clean sentence.
+ * @example
+ * // Returns "Ho World!"
+ * removeWord("Hello World!", "ell");
+ */
+function removeWord(sentence: string, word: string): string {
+    return sentence.replace(word, "");
 }
 export { removeWord };

@@ -13,8 +13,8 @@
 1. [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-2. [Usage](#usage)
-3. [Result](#result)
+2. [Test](#test)
+3. [Documentation](#documentation)
 
 ---
 
@@ -47,24 +47,26 @@ Follow these steps to set up the project locally:
    
 ---
 
-## Usage
-- Run `JavaScript` source.
-    ```bash
-    cd ./javascript/src
-    ```
-
-- or `TypeScript`
-  ```bash
-  cd ./dist
-  ```
-
+## Test
+- You can Run `test.js` or with npm
+   ```bash
+    npm run test:js
+   ```
+- Output:
+   ```text
+   output: 37.78°C
+   output: 3km
+   output: isEven: true
+   output: string = Hello World!, search string = ell -> Ho World!
+   output: madam -> palindrome
+   ```
 ---
 
-## Result
+## Documentation
 ### Task 1
 > Write a program that takes a temperature in Fahrenheit as input and converts it to Celsius
 
-Run the script:
+Input:
 ```bash
   node fahrenheit_to_celsius 120
 ```
