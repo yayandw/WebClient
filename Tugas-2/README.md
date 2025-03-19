@@ -66,14 +66,16 @@ Follow these steps to set up the project locally:
 ### Task 1
 > Write a program that takes a temperature in Fahrenheit as input and converts it to Celsius
 
-Input:
-```bash
-  node fahrenheit_to_celsius 120
+Function:
+```typescript
+function centiToKiloMeter(centimeter) {
+    return centimeter / 100 / 1000;
+}
 ```
 
 Output:
-```bash
-  output: 30°C
+```text
+output: 30°C
 ```
 
 ### Task 2
