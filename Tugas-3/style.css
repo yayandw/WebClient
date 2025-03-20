@@ -16,14 +16,13 @@ body {
 
 .page {
     width: 1040px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-top: 64px;
 }
 
 /* Check margin */
 nav {
     font-family: 'Mulish', sans-serif;
-    color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,16 +32,25 @@ nav {
 nav ul {
     display: flex;
     gap: 48px;
+    list-style: none;
 }
 
 /* Check list link style */
 nav ul li a {
-
+    font-size: 18px;
+    color: #1F1534;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+    opacity: 50%;
 }
 
 /* Make text bold on hover */
 nav ul li a:hover {
-
+    font-weight: 700;
+    opacity: 100%;
 }
 
 
@@ -55,36 +63,77 @@ main {
 
 /* Check margin and font styling */
 .text h1 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 150%;
     font-family: 'Mulish', sans-serif;
+    margin-bottom: 16px
 }
 
 /* Check font styling */
 .text h1 span {
+    letter-spacing: 0;
+    line-height: 150%;
+    font-weight: 700;
+    color: #69B99D;
+    font-family: 'Mulish', sans-serif;
 }
 
 /* Check font styling */
 .text p {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0;
+    color: #7D7987;
+    margin-bottom: 48px;
+}
+
+button {
+    width: fit-content;
+    height: 56px;
+    background-color: #69B99D;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 32px 15px 32px;
+    align-items: center;
 }
 
 /* Check font styling and make sure the button is rounded */
 .text button {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     gap: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #F9F9F9;
 }
 
 /* Handle when user hover on the button */
 .text button:hover {
+    cursor: pointer;
 }
 
 /* Check the text styling */
 footer {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0;
+    text-align: center;
 }
 
 /* Check the text styling */
 footer a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0;
     color: #000;
     text-decoration: none;
     font-weight: 700;
@@ -92,7 +141,7 @@ footer a {
 
 #balls {
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
 }
 
