@@ -1,7 +1,4 @@
-This is repository for Exercise 3 Web Client Development(WCD) 
+# Tugas 3 
 
-```
-function test()=> {
-    console.log("This app is running well");
-}
-```
+## Result
+![Workout](./images/result.png)
