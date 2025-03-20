@@ -67,66 +67,97 @@ Follow these steps to set up the project locally:
 > Write a program that takes a temperature in Fahrenheit as input and converts it to Celsius
 
 Function:
-```typescript
-function centiToKiloMeter(centimeter) {
-    return centimeter / 100 / 1000;
+```javascript
+/**
+ * Convert fahrenheit to celsius
+ *
+ * @param {number} fahrenheit - The fahrenheit want to convert.
+ * @returns {number} Result in celsius.
+ * @example
+ * // Returns "37.78"
+ * fahrenheitToCelsius(100);
+ */
+function fahrenheitToCelsius(fahrenheit) {
+    return parseFloat(((fahrenheit - 32) * (5 / 9)).toFixed(2));
 }
-```
-
-Output:
-```text
-output: 30°C
 ```
 
 ### Task 2
 > Write a code to convert centimeter to kilometer or vice versa
 
-Run the script:
-```bash
-  node centi_to_kilo_meter 100000
-```
-
-Output:
-```bash
-  output: 1km
+Function:
+```javascript
+/**
+ * Convert centimeter to kilometer
+ *
+ * @param {number} centimeter - The centimeter want to convert.
+ * @returns {number} Result in kilometer.
+ * @example
+ * // Returns "3"
+ * centiToKiloMeter(300000);
+ */
+function centiToKiloMeter(centimeter) {
+    return centimeter / 100 / 1000;
+}
 ```
 
 ### Task 3
 > Write a function that takes an integer n as input and returns true if n is odd and false if n is even
 
-Run the script:
-```bash
-  node is_even 1000
-```
-
-Output:
-```bash
-  output: isEven: true
+Function:
+```javascript
+/**
+ * Check is even
+ *
+ * @param {number} number - The number want to check.
+ * @returns {boolean} Result true / false.
+ * @example
+ * // Returns "true"
+ * isEven(1000);
+ */
+function isEven(number) {
+    return number % 2 === 0;
+}
 ```
 
 ### Task 4
 > Write a code to remove the first occurrence of a given "search string" from a string
 
-Run the script:
-```bash
-  node remove_string "Hello world" "ell"
-```
-
-Output:
-```bash
-  output: string = "Hello world", search string = "ell" -> "Ho world"
+Function:
+```javascript
+/**
+ * Remove word in sentence
+ *
+ * @param {string} sentence - The sentence.
+ * @param {string} word - The word want to remove.
+ * @returns {string} Result clean sentence.
+ * @example
+ * // Returns "Ho World!"
+ * removeWord("Hello World!", "ell");
+ */
+function removeWord(sentence, word) {
+    return sentence.replace(word, "");
+}
 ```
 
 ### Task 5
 > Write a code to check whether a string is a palindrome or not
 
-Run the script:
-```bash
-  node is_palindrome "madam"
-```
-
-Output:
-```bash
-  output: "madam" -> palindrome
+Function:
+```javascript
+/**
+ * Check is palindrome
+ *
+ * @param {string} string - The string want to check.
+ * @returns {boolean} Result true / false.
+ * @example
+ * // Returns "true"
+ * isPalindrome("madam");
+ */
+function isPalindrome(string) {
+    const cleanedStr = string.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    const reversedStr = cleanedStr.split('').reverse().join('');
+    return cleanedStr === reversedStr;
+}
 ```
 ---
