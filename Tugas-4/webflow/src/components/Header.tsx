@@ -1,4 +1,4 @@
-import {useState} from "react"
+import React, {useState} from "react"
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
 import {Dialog, DialogPanel} from "@headlessui/react";
 
@@ -9,11 +9,14 @@ const navigation = [
     {name: 'Contact', href: '/contact'},
 ]
 
+interface Props {
+    className?: string,
+}
 
-const Header = () => {
+const Header: React.FC<Props> = ({className}) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
-        <header className="fixed inset-x-0 top-0 pt-6 z-50 ms-20 me-20">
+        <header className={className + " object-cover inset-x-0 top-0 pt-6 z-50 ms-20 me-20"}>
             <nav aria-label="Global" className="flex items-center justify-between">
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5 text-[18px] text-[#0B0C0E]">
