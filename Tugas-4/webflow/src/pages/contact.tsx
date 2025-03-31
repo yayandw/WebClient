@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const Contact = () => {
     return (
         <div className="pt-40 grid grid-cols-2 ps-20 pe-20">
@@ -18,7 +20,7 @@ const Contact = () => {
                 <div className="flex flex-col pt-9 gap-8">
                     <div className="flex flex-col gap-3">
                         <p className="text-[#0B0C0E] text-[18px]">Name</p>
-                        <input className="border-none outline-none shadow-none bg-transparent text-[27px]"
+                        <input type="" className="border-none outline-none shadow-none bg-transparent text-[27px]"
                                placeholder="James Robert"/>
                         <div className="w-full h-px bg-[#3C3D3E] "/>
                     </div>
@@ -40,13 +42,13 @@ const Contact = () => {
                                   placeholder="Type your Message"/>
                         <div className="w-full h-px bg-[#3C3D3E] "/>
                     </div>
-                    <a href="/"
+                    <Link to="/"
                        className="bg-[#0B0C0E] rounded-full w-[190px] h-[70px]
                        text-[#F4F7FA] text-[18px] font-bold flex items-center
                        justify-center shadow-xs hover:text-white hover:bg-indigo-500
                        focus-visible:outline-2 focus-visible:outline-offset-2
                        focus-visible:outline-indigo-600">Submit
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

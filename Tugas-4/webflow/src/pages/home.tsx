@@ -2,6 +2,7 @@ import RecentWork from "../components/RecentWork.tsx";
 import Works from "../components/Works.tsx";
 import Comment from "../components/Comment.tsx";
 import HelloTip from "../components/HelloTip.tsx";
+import {Link} from "react-router-dom";
 
 const work1 = ["/work1.svg", "/work2.svg", "/work3.svg", "/work4.svg"]
 const work2 = ["/work1.svg", "/work6.svg", "/work7.svg", "/work4.svg"]
@@ -13,7 +14,7 @@ const Home = () => {
                 <img src="/person.svg" alt="Person" className="absolute bottom-0 object-cover"/>
                 <p className="absolute w-full bottom-20 left-0 right-0 p-4 text-8xl font-bold overflow-hidden text-[#F4F7FA]">—
                     Webflow Developer — UI/UX Designer — Web Designer —</p>
-                <HelloTip className="group absolute right-0 object-cover"/>
+                <HelloTip className="group absolute right-0 object-cover cursor-pointer"/>
             </div>
             <div className="max-w-full grid grid-cols-3 ms-20 me-20 gap-40">
                 <p className="text-[40px] font-medium">About</p>
@@ -55,10 +56,10 @@ const Home = () => {
                         <p className="text-6xl font-medium text-[#F4F7FA]">let’s build it together.</p>
                     </div>
                 </div>
-                <a href="/contact"
+                <Link to="/contact"
                    className="bg-[#F4F7FA] rounded-full w-[190px] h-[70px] text-[#0B0C0E] text-[18px] font-bold flex items-center justify-center shadow-xs hover:text-white hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
                     in touch
-                </a>
+                </Link>
             </div>
         </div>
     )
