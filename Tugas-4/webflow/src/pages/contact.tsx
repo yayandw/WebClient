@@ -2,7 +2,7 @@ const Contact = () => {
     return (
         <div className="pt-40 grid grid-cols-2 ps-20 pe-20">
             <div className="flex flex-col font-normal">
-                <img className="w-[297px]" src="/contact-person.svg" alt="..."/>
+                <img className="w-[297px]" src="/contact-person.png" alt="..."/>
                 <p className="pt-14 text-[#3C3D3E] text-[18px] ">Contact Details</p>
                 <p className="text-[#0B0C0E] text-[27px]">ayush.barnwal@brightscout.com</p>
                 <p className="text-[#0B0C0E] text-[27px]">+91 8651447521</p>
