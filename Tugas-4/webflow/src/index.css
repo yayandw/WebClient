@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+    --animate-slide-in: slide 8s linear infinite;
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    --animate-slide-out: slide-out 10s linear infinite alternate;
+    @keyframes slide-out {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+
+    }
+    --animate-infinite-start: infinite-scroll-start 100s linear infinite;
+    @keyframes infinite-scroll-start {
+        0% {
+            transform: translateX(calc(-444px * 12));
+        }
+    }
+    --animate-infinite-end: infinite-scroll-end 100s linear infinite;
+    @keyframes infinite-scroll-end {
+        100% {
+            transform: translateX(calc(-444px * 12));
+        }
+    }
+}
+
+@font-face {
+    font-family: 'neue-montreal';
+    src: url("./assets/PPNeueMontreal-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "neue-montreal", serif;
+}
