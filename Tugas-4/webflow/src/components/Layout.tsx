@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
         <div className="w-auto h-auto relative">
             <div className="w-auto h-auto">
                 <Header className="absolute"/>
-                <div className="flex flex-col gap-12">
+                <div className="flex flex-col">
                     <main className="top-0">{children}</main>
                     <Footer/>
                 </div>
