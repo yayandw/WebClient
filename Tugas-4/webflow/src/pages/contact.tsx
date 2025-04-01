@@ -6,14 +6,14 @@ const Contact = () => {
             <div className="flex flex-col font-normal">
                 <img className="w-[297px]" src="/contact-person.png" alt="..."/>
                 <p className="pt-14 text-[#3C3D3E] text-[18px] ">Contact Details</p>
-                <p className="text-[#0B0C0E] text-[27px]">ayush.barnwal@brightscout.com</p>
-                <p className="text-[#0B0C0E] text-[27px]">+91 8651447521</p>
+                <Link to="#" className="text-[#0B0C0E] text-[27px]">ayush.barnwal@brightscout.com</Link>
+                <Link to="#" className="text-[#0B0C0E] text-[27px]">+91 8651447521</Link>
                 <p className="pt-10 text-[#3C3D3E] text-[18px]">Social</p>
-                <p className="text-[#0B0C0E] text-[27px]">Linkedin</p>
-                <p className="text-[#0B0C0E] text-[27px]">Instagram</p>
-                <p className="text-[#0B0C0E] text-[27px]">Twitter</p>
-                <p className="text-[#0B0C0E] text-[27px]">Webflow</p>
-                <p className="text-[#0B0C0E] text-[27px]">Figma</p>
+                <Link to="#" className="text-[#0B0C0E] text-[27px]">Linkedin</Link>
+                <Link to="#" className="text-[#0B0C0E] text-[27px]">Instagram</Link>
+                <Link to="#" className="text-[#0B0C0E] text-[27px]">Twitter</Link>
+                <Link to="#" className="text-[#0B0C0E] text-[27px]">Webflow</Link>
+                <Link to="#" className="text-[#0B0C0E] text-[27px]">Figma</Link>
             </div>
             <div className="flex flex-col mb-28">
                 <p className="text-[#3C3D3E] text-6xl">Let’s build something cool together</p>
