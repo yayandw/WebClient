@@ -12,7 +12,7 @@ const Home = () => {
         <div className="w-auto h-auto flex flex-col gap-40">
             <div className="h-[700px] bg-[#C7D0D9] flex relative items-center justify-center overflow-hidden">
                 <img src="/person.svg" alt="Person" className="absolute bottom-0 object-cover"/>
-                <p className="absolute animate-scroll w-full bottom-20 left-0 right-0 p-4 text-8xl font-bold whitespace-nowrap text-[#F4F7FA]">—
+                <p className="absolute animate-scroll w-full bottom-20 left-0 right-0 text-[160px] font-bold whitespace-nowrap text-[#F4F7FA]">—
                     Webflow Developer — UI/UX Designer — Web Designer —</p>
                 <HelloTip className="group absolute right-0 object-cover cursor-pointer"/>
             </div>
