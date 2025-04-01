@@ -10,7 +10,7 @@ const work2 = ["/work1.svg", "/work6.svg", "/work7.svg", "/work4.svg"]
 const Home = () => {
     return (
         <div className="w-auto h-auto flex flex-col gap-40">
-            <div className="h-[700px] bg-[#C7D0D9] flex relative items-center justify-center overflow-hidden">
+            <div className="h-[700px] bg-[#C7D0D9] flex relative items-center justify-center overflow-hidden select-none">
                 <img src="/person.svg" alt="Person" className="absolute bottom-0 object-cover"/>
                 <p className="absolute animate-scroll w-full bottom-20 left-0 right-0 text-[160px] font-bold whitespace-nowrap text-[#F4F7FA]">—
                     Webflow Developer — UI/UX Designer — Web Designer —</p>

@@ -1,18 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-    --animate-scroll: scroll 25s linear infinite;
-    @keyframes scroll {
-        0% {
-            transform: translateX(-100%);
-        }
-        50% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
     --animate-infinite-start: infinite-scroll-start 100s linear infinite;
     @keyframes infinite-scroll-start {
         0% {
@@ -32,6 +20,24 @@
     src: url("./assets/PPNeueMontreal-Medium.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.animate-scroll {
+    animation: scroll 25s ease-in-out infinite;
+}
+.animate-scroll:hover {
+    animation-play-state: paused;
 }
 
 body {
