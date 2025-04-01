@@ -17,7 +17,7 @@ interface Props {
 const Header: React.FC<Props> = ({className}) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
-        <header className={className + " object-cover inset-x-0 top-0 pt-6 z-50 ms-20 me-20"}>
+        <header className={className + " object-cover inset-x-0 top-0 pt-6 z-50 ps-20 pe-20"}>
             <nav aria-label="Global" className="flex items-center justify-between">
                 <div className="flex lg:flex-1">
                     <Link to="/" className="-m-1.5 p-1.5 text-[18px] text-[#0B0C0E]">
