@@ -43,10 +43,10 @@ const Home = () => {
                 <div className="col-span-2 flex flex-col  gap-16">
                     <Comment
                         comment="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.” "
-                        src="/ayush.svg" title="Ayush Raj" description="VP of Marketing @ Webflow"/>
+                        src="/ayush.png" title="Ayush Raj" description="VP of Marketing @ Webflow"/>
                     <Comment
                         comment="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.” "
-                        src="/alex.svg" title="Alex Cattoni" description="Founder @ CopyPossy"/>
+                        src="/alex.png" title="Alex Cattoni" description="Founder @ CopyPossy"/>
                 </div>
             </div>
             <div className="w-auto bg-[#0B0C0E] ps-20 pt-20 pe-20 flex items-center justify-between">
