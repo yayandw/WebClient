@@ -1,0 +1,86 @@
+[
+  {
+    "number" : "0001",
+    "image": "/001.png",
+    "name" : "Bulbasaur",
+    "type" : "Grass",
+    "sub_type": "Poison"
+  },
+  {
+    "number" : "0002",
+    "image": "/002.png",
+    "name" : "Ivysaur",
+    "type" : "Grass",
+    "sub_type": "Poison"
+  },
+  {
+    "number" : "0003",
+    "image": "/003.png",
+    "name" : "Venusaur",
+    "type" : "Grass",
+    "sub_type": "Poison"
+  },
+  {
+    "number" : "0004",
+    "image": "/004.png",
+    "name" : "Charmander",
+    "type" : "Fire",
+    "sub_type": ""
+  },
+  {
+    "number" : "0005",
+    "image": "/005.png",
+    "name" : "Charmeleon",
+    "type" : "Fire",
+    "sub_type": ""
+  },
+  {
+    "number" : "0006",
+    "image": "/006.png",
+    "name" : "Charizard",
+    "type" : "Fire",
+    "sub_type": "Flying"
+  },
+  {
+    "number" : "0007",
+    "image": "/007.png",
+    "name" : "Squirtle",
+    "type" : "Water",
+    "sub_type": ""
+  },
+  {
+    "number" : "0008",
+    "image": "/008.png",
+    "name" : "Wartortle",
+    "type" : "Water",
+    "sub_type": ""
+  },
+  {
+    "number" : "0009",
+    "image": "/009.png",
+    "name" : "Blastoise",
+    "type" : "Water",
+    "sub_type": ""
+  },
+  {
+    "number" : "0010",
+    "image": "/010.png",
+    "name" : "Metapod",
+    "type" : "Bug",
+    "sub_type": ""
+  },
+  {
+    "number" : "0011",
+    "image": "/011.png",
+    "name" : "Bulbasaur",
+    "type" : "Bug",
+    "sub_type": ""
+  },
+  {
+    "number" : "0012",
+    "image": "/012.png",
+    "name" : "Butterfree",
+    "type" : "Bug",
+    "sub_type": "Flying"
+  }
+]
