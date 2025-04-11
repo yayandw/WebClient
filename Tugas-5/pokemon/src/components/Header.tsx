@@ -41,7 +41,7 @@ const Header = () => {
                 ))
             }
             {
-                (isSearchVisible && (
+                (isSearchVisible && !location.pathname.startsWith("/pokemon/") && (
                     <div className="pe-[25px]">
                         <div className="relative">
                             <input
