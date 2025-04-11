@@ -45,7 +45,6 @@ Follow these steps to set up the project locally:
 ---
 
 ## Preview
-<video width="640" height="360" controls>
-  <source src="./records/recording.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+https://github.com/user-attachments/assets/49b785a8-1328-4944-b77c-c5cedd4b2f96
+
