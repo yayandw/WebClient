@@ -19,7 +19,7 @@ const Grid = () => {
             {
                 items.map((item, index) => (
                     <div
-                        className="h-[calc(100vh/3)] aspect-[128/180] box-border p-[19px] bg-[#F0F3FF] rounded-[8px] relative flex items-center justify-center"
+                        className="h-[180] aspect-[128/180] box-border p-[19px] bg-[#F0F3FF] rounded-[8px] relative flex items-center justify-center"
                         key={index} onClick={() => handleClick(item.number)}>
                         <img className="object-cover" src={item.image}
                              alt="..."/>
