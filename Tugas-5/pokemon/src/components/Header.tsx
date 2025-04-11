@@ -1,5 +1,5 @@
 import {useLocation, useNavigate} from "react-router-dom";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useArrayData} from "../constants/ArrayDataContext.tsx";
 
 const Header = () => {
@@ -16,11 +16,20 @@ const Header = () => {
         setIsSearchVisible((prev) => !prev);
         if (isSearchVisible) {
             clearSearch();
+            setSearchValue('');
         }
     };
 
     const { clearSearch, filter } = useArrayData();
     const [searchValue, setSearchValue] = useState<string>("");
+    useEffect(() => {
+        if (isSearchVisible) {
+            const inputElement = document.querySelector('input');
+            if (inputElement) {
+                inputElement.focus();
+            }
+        }
+    }, [isSearchVisible]);
     return (
         <header
             className="w-full sticky top-0 z-50 shadow-md bg-[#252A3E] h-12 border-b-[1px] border-b-[#3D4466] flex flex-row items-center justify-between">
@@ -46,7 +55,7 @@ const Header = () => {
                                 className="w-full ps-2 pe-10 py-[2px] border rounded-[8px] focus:outline-none bg-white"
                             />
                             <svg
-                                className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"
+                                className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 cursor-pointer"
                                 onClick={toggleSearchBar}
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
