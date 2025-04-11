@@ -18,25 +18,25 @@ export const useArrayData = () => {
     return context;
 };
 
-export const ArrayDataProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const ArrayDataProvider: React.FC<{ children: React.ReactNode }> = ({children}) => {
     const [items, setItems] = useState<any[]>(initialData);
 
     const clearSearch = () => {
         setItems(initialData);
     };
 
-    const filter = (itemToRemove: string) => {
-        if (!itemToRemove) {
+    const filter = (keyword: string) => {
+        if (!keyword) {
             setItems(initialData);
             return;
         }
-
-        setItems((prevItems) =>
-            prevItems.filter((item) => item.name.toLowerCase().includes(itemToRemove.toLowerCase()))
+        const filteredItems = initialData.filter((item) =>
+            item.name.toLowerCase().includes(keyword.toLowerCase())
         );
+        setItems(filteredItems);
     };
 
-    const sort = (type: string)=> {
+    const sort = (type: string) => {
         switch (type) {
             case '1':
                 setItems((prevItems) =>
@@ -65,7 +65,7 @@ export const ArrayDataProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     }
 
     return (
-        <ArrayDataContext.Provider value={{ items, clearSearch, filter, sort }}>
+        <ArrayDataContext.Provider value={{items, clearSearch, filter, sort}}>
             {children}
         </ArrayDataContext.Provider>
     );
