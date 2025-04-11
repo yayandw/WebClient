@@ -65,14 +65,14 @@
   {
     "number" : "0010",
     "image": "/010.png",
-    "name" : "Metapod",
+    "name" : "Caterpie",
     "type" : "Bug",
     "sub_type": ""
   },
   {
     "number" : "0011",
     "image": "/011.png",
-    "name" : "Bulbasaur",
+    "name" : "Metapod",
     "type" : "Bug",
     "sub_type": ""
   },

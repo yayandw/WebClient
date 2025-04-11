@@ -1,22 +1,10 @@
 import Toolbar from "../components/Toolbar.tsx";
-import initialData from "../assets/pokemon.json"
-import {useReducer} from "react";
-import taskReducer from "../functions/TaskReducer.tsx";
 import {useNavigate} from "react-router-dom";
+import {useArrayData} from "../constants/ArrayDataContext.tsx";
 
 
 const Grid = () => {
-    const [data, dispatch] = useReducer(
-        taskReducer,
-        initialData
-    )
-
-    function sort(text: any) {
-        dispatch({
-            type: 'sort',
-            text: text,
-        })
-    }
+    const {items, sort} = useArrayData();
 
     const navigate = useNavigate();
 
@@ -29,7 +17,7 @@ const Grid = () => {
             className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ps-[20px] pt-4 pe-[21px] pb-4 gap-4 place-items-center">
             <Toolbar onSort={sort} className="col-span-2 md:col-span-3 lg:col-span-4"/>
             {
-                data.map((item, index) => (
+                items.map((item, index) => (
                     <div
                         className="h-[calc(100vh/3)] aspect-[128/180] box-border p-[19px] bg-[#F0F3FF] rounded-[8px] relative flex items-center justify-center"
                         key={index} onClick={() => handleClick(item.number)}>

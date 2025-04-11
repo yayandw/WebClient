@@ -14,7 +14,7 @@ const Header = () => {
 
     const toggleSearchBar = () => {
         setIsSearchVisible((prev) => !prev);
-        if (!isSearchVisible) {
+        if (isSearchVisible) {
             clearSearch();
         }
     };
@@ -38,7 +38,6 @@ const Header = () => {
                             <input
                                 value={searchValue}
                                 onChange={(e) => {
-                                    console.log(e.target.value);
                                     filter(e.target.value);
                                     setSearchValue(e.target.value);
                                 }}

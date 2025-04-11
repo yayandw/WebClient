@@ -1,25 +1,11 @@
 import Toolbar from "../components/Toolbar.tsx";
 import {colorMap} from "../constants/ColorType.tsx";
-import {useReducer} from "react";
-import taskReducer from "../functions/TaskReducer.tsx";
 import {useNavigate} from "react-router-dom";
 import {useArrayData} from "../constants/ArrayDataContext.tsx";
 
 
 const Timeline = () => {
-    const { items } = useArrayData();
-
-    const [data, dispatch] = useReducer(
-        taskReducer,
-        items
-    )
-
-    function sort(text: any) {
-        dispatch({
-            type: 'sort',
-            text: text,
-        });
-    }
+    const {items, sort} = useArrayData();
 
     const navigate = useNavigate();
 
@@ -31,7 +17,7 @@ const Timeline = () => {
         <div className="w-full h-full flex flex-col ps-[20px] pt-4 pe-[21px] pb-4 gap-4">
             <Toolbar onSort={sort}/>
             {
-                data.map((item: any, index: any) => (
+                items.map((item: any, index: any) => (
                     <div className="w-full bg-[#F0F3FF] rounded-[8px] relative flex items-center justify-center"
                          key={index} onClick={() => handleClick(item.number)}>
                         <label
