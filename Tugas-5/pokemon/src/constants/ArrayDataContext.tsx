@@ -37,31 +37,26 @@ export const ArrayDataProvider: React.FC<{ children: React.ReactNode }> = ({chil
     };
 
     const sort = (type: string) => {
+        let sortedItems;
+
         switch (type) {
-            case '1':
-                setItems((prevItems) =>
-                    [...prevItems].sort((a, b) => a.number.localeCompare(b.number))
-                )
-                break
-            case '2':
-                setItems((prevItems) =>
-                    [...prevItems].sort((a, b) => b.number.localeCompare(a.number))
-                )
-                break
-            case '3':
-                setItems((prevItems) =>
-                    [...prevItems].sort((a, b) => a.name.localeCompare(b.name))
-                )
-                break
-            case '4':
-                setItems((prevItems) =>
-                    [...prevItems].sort((a, b) => b.name.localeCompare(a.name))
-                )
-                break
-            default: {
-                throw Error('Unknown action: ' + type);
-            }
+            case '1': // Sort by number (ascending)
+                sortedItems = [...items].sort((a, b) => a.number.localeCompare(b.number));
+                break;
+            case '2': // Sort by number (descending)
+                sortedItems = [...items].sort((a, b) => b.number.localeCompare(a.number));
+                break;
+            case '3': // Sort by name (ascending)
+                sortedItems = [...items].sort((a, b) => a.name.localeCompare(b.name));
+                break;
+            case '4': // Sort by name (descending)
+                sortedItems = [...items].sort((a, b) => b.name.localeCompare(a.name));
+                break;
+            default:
+                throw new Error('Unknown action: ' + type);
         }
+
+        setItems(sortedItems);
     }
 
     return (
