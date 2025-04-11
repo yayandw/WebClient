@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Link} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 interface Props {
     className?: string | undefined;
@@ -12,6 +12,18 @@ function Toolbar({className, onSort}: Props) {
         setSelectedOption(event.target.value);
         onSort(event.target.value);
     };
+
+    const location = useLocation();
+
+    const [activeSection, setActiveSection] = useState(location.pathname);
+
+    const navigate = useNavigate();
+
+    function handleClick(path: string) {
+        setActiveSection(path);
+        navigate(path);
+    }
+
     return (
         <div
             className={className + " w-full flex flex-row items-center justify-between gap-[23px] font-normal text-[16px] text-[#97A0CC]"}>
@@ -26,10 +38,14 @@ function Toolbar({className, onSort}: Props) {
                 <option value="3">A-Z</option>
                 <option value="4">Z-A</option>
             </select>
-            <ul className="flex flex-row w-[70px] h-8 justify-around items-center bg-[#3D4466] rounded-[8px]">
-                <li><Link to="/timeline"><img src="/timeline_1.svg" alt="timeline"/></Link></li>
-                <li><Link to="/grid"><img src="/grid_1.svg" alt="grid"/></Link></li>
-            </ul>
+            <div className="grid grid-cols-2 w-[70px] h-8 justify-around items-center bg-[#3D4466] rounded-[8px]">
+                <div
+                    className={`w-[36px] h-8 border-r-[1px] border-[#97A0CC] flex items-center justify-center rounded-l-[8px] ${activeSection === "/timeline" || activeSection === "/" ? "" : "bg-[#0C1231]"}`}
+                    onClick={() => handleClick("/timeline")}><img src="/timeline_1.svg" alt="timeline"/></div>
+                <div
+                    className={`w-[36px] h-8 border-l-[1px] border-[#97A0CC] flex items-center justify-center rounded-r-[8px] ${activeSection === "/grid" ? "" : "bg-[#0C1231]"}`}
+                    onClick={() => handleClick("/grid")}><img src="/grid_1.svg" alt="grid"/></div>
+            </div>
         </div>
     )
 }
