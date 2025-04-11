@@ -6,6 +6,7 @@
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
 2. [Test](#test)
+3. [Preview](#preview)
 
 ---
 
@@ -40,4 +41,11 @@ Follow these steps to set up the project locally:
 
 ## Test
 - Open your browser http://localhost:5173/
+
 ---
+
+## Preview
+<video width="640" height="360" controls>
+  <source src="./records/recording.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
