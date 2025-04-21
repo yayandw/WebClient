@@ -1,4 +1,4 @@
-# Tugas 5
+# Tugas 6
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ Follow these steps to set up the project locally:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd ./WebClient/Tugas-5/pokemon
+   cd ./WebClient/Tugas-6/pokemon
    ```
 3. Install dependencies:
    ```bash
