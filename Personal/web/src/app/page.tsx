@@ -49,7 +49,7 @@ export default function Home() {
 
                         {/* Item 2 */}
                         <li className="mb-4 flex items-start">
-                            <div className="mr-4">
+                            <div className="mr-4 w-1/7">
                                 <span className="text-gray-500">2008 — now</span>
                             </div>
                             <div>
@@ -98,12 +98,13 @@ export default function Home() {
                     </ul>
                 </div>
 
+                { /* Writing Section https://medium.com/feed/@yayandwicaksono */ }
                 <div>
                     <h2 className="text-lg font-bold mb-2">Writing</h2>
                     <ul className="list-none">
                         {/* Item 5 */}
                         <li className="mb-4 flex items-start">
-                            <div className="mr-4">
+                            <div className="mr-4 w-1/7">
                                 <span className="text-gray-500">2010 — 2012</span>
                             </div>
                             <div>
@@ -123,7 +124,7 @@ export default function Home() {
 
                         {/* Item 5 */}
                         <li className="mb-4 flex items-start">
-                            <div className="mr-4">
+                            <div className="mr-4 w-1/7">
                                 <span className="text-gray-500">2010 — 2012</span>
                             </div>
                             <div>
@@ -143,14 +144,14 @@ export default function Home() {
                     </ul>
                 </div>
 
-                {/* Work Experience Section */}
+                {/* Education Section */}
                 <div>
                     <h2 className="text-lg font-bold mb-2">Education</h2>
                     <ul className="list-none">
 
                         {/* Item 5 */}
                         <li className="mb-4 flex items-start">
-                            <div className="mr-4">
+                            <div className="mr-4 w-1/7">
                                 <span className="text-gray-500">2010 — 2012</span>
                             </div>
                             <div>
@@ -170,7 +171,7 @@ export default function Home() {
 
                         {/* Item 5 */}
                         <li className="mb-4 flex items-start">
-                            <div className="mr-4">
+                            <div className="mr-4 w-1/7">
                                 <span className="text-gray-500">2010 — 2012</span>
                             </div>
                             <div>
